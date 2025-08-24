@@ -7,7 +7,7 @@ HOMEPAGE="https://github.com/Fchat-Horizon/Horizon"
 
 RESTRICT="mirror network-sandbox"
 
-LICENSE="MIT"
+LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
