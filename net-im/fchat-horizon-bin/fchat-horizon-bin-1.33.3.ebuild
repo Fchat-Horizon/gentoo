@@ -9,7 +9,7 @@ SRC_URI="
 
 S="${WORKDIR}"
 
-LICENSE="MIT"
+LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 RESTRICT="bindist mirror"
@@ -61,8 +61,8 @@ src_install() {
   insinto /usr/share/applications
   doins usr/share/applications/horizon-electron.desktop
 
-  insinto /usr/share/icons/hicolor/512x512/apps
-  doins usr/share/icons/hicolor/512x512/apps/horizon-electron.png
+  insinto /usr/share/icons/hicolor/256x256/apps
+  doins usr/share/icons/hicolor/256x256/apps/horizon-electron.png
 }
 
 

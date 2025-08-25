@@ -7,7 +7,7 @@ HOMEPAGE="https://github.com/Fchat-Horizon/Horizon"
 
 RESTRICT="mirror network-sandbox"
 
-LICENSE="MIT"
+LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
@@ -115,7 +115,8 @@ src_install() {
         make_desktop_entry horizon-electron "F-Chat Horizon" fchat-horizon
     fi
 
-    newicon -s 512 electron/build/icon.png fchat-horizon.png
+    # Install icon using the name referenced by the desktop file
+    newicon -s 512 electron/build/icon.png horizon-electron.png
 
     dosym /opt/horizon/horizon-electron /usr/bin/horizon-electron
 }
